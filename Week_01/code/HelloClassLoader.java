@@ -33,7 +33,7 @@ public class HelloClassLoader extends ClassLoader {
             e.printStackTrace();
             throw new ClassNotFoundException("xlass file not found");
         }
-        return decode(xlassBytes);
+        return xlassBytes;
     }
 
     private byte[] loadFromFile(String path) throws IOException {
@@ -43,7 +43,7 @@ public class HelloClassLoader extends ClassLoader {
         while ((nextValue = inputStream.read()) != -1) {
             bout.write(nextValue);
         }
-        return bout.toByteArray();
+        return decode(bout.toByteArray());
     }
 
     private byte[] decode(byte[] xlass) {
