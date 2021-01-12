@@ -30,3 +30,7 @@ public class HelloByteCode {
 ## 作业：画图展示Xmx, Xms, Xmn, Metaspace, DirectMemory,Xss这些内存参数的关系
 
 ![compare_jvm_options](./resources/compare_jvm_options.jpg)
+
+## 知识脉络思维导图-每周持续更新
+
+https://mubu.com/doc/2cuZyRhDGdA
